@@ -34,7 +34,7 @@ export function Contact() {
           <Reveal delay={0.15}>
             <a
               href="mailto:office@abadmin.services"
-              className="glass group flex w-fit items-center gap-4 rounded-xl border border-gold/20 px-6 py-4 transition-all duration-300 hover:border-gold/50"
+              className="cursor-pointer glass group flex w-fit items-center gap-4 rounded-xl border border-gold/20 px-6 py-4 transition-all duration-300 hover:border-gold/50"
             >
               <span className="flex h-11 w-11 items-center justify-center rounded-full border border-gold/30 text-gold transition-colors group-hover:bg-gold group-hover:text-primary-foreground">
                 <Mail className="h-5 w-5" />
@@ -57,7 +57,7 @@ export function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="AB Admin Services on Facebook"
-                className="flex h-12 w-12 items-center justify-center rounded-full border border-gold/25 text-gold transition-all duration-300 hover:scale-110 hover:bg-gold hover:text-primary-foreground"
+                className="cursor-pointer flex h-12 w-12 items-center justify-center rounded-full border border-gold/25 text-gold transition-all duration-300 hover:scale-110 hover:bg-gold hover:text-primary-foreground"
               >
                 <FacebookIcon className="h-5 w-5" />
               </a>
@@ -66,7 +66,7 @@ export function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="AB Admin Services on Instagram"
-                className="flex h-12 w-12 items-center justify-center rounded-full border border-gold/25 text-gold transition-all duration-300 hover:scale-110 hover:bg-gold hover:text-primary-foreground"
+                className="cursor-pointer flex h-12 w-12 items-center justify-center rounded-full border border-gold/25 text-gold transition-all duration-300 hover:scale-110 hover:bg-gold hover:text-primary-foreground"
               >
                 <InstagramIcon className="h-5 w-5" />
               </a>

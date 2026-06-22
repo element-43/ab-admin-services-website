@@ -45,7 +45,7 @@ export function Footer() {
                 <li key={l.href}>
                   <button
                     onClick={() => go(l.href)}
-                    className="text-sm font-light text-muted-foreground transition-colors hover:text-gold"
+                    className="cursor-pointer text-sm font-light text-muted-foreground transition-colors hover:text-gold"
                   >
                     {l.label}
                   </button>
@@ -60,7 +60,7 @@ export function Footer() {
             </h4>
             <a
               href="mailto:office@abadmin.services"
-              className="flex items-center gap-3 text-sm font-light text-muted-foreground transition-colors hover:text-gold"
+              className="cursor-pointer flex items-center gap-3 text-sm font-light text-muted-foreground transition-colors hover:text-gold"
             >
               <Mail className="h-4 w-4 text-gold" />
               office@abadmin.services
@@ -71,7 +71,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="AB Admin Services on Facebook"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/25 text-gold transition-all duration-300 hover:bg-gold hover:text-primary-foreground"
+                className="cursor-pointer flex h-10 w-10 items-center justify-center rounded-full border border-gold/25 text-gold transition-all duration-300 hover:bg-gold hover:text-primary-foreground"
               >
                 <FacebookIcon className="h-4 w-4" />
               </a>
@@ -80,7 +80,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="AB Admin Services on Instagram"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/25 text-gold transition-all duration-300 hover:bg-gold hover:text-primary-foreground"
+                className="cursor-pointer flex h-10 w-10 items-center justify-center rounded-full border border-gold/25 text-gold transition-all duration-300 hover:bg-gold hover:text-primary-foreground"
               >
                 <InstagramIcon className="h-4 w-4" />
               </a>

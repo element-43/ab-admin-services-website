@@ -82,13 +82,13 @@ export function Hero() {
         >
           <button
             onClick={() => scrollTo('#contact')}
-            className="bg-gold-gradient gold-glow group flex items-center gap-2 rounded-full px-9 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-primary-foreground transition-transform duration-300 hover:scale-[1.03]"
+            className="bg-gold-gradient cursor-pointer gold-glow group flex items-center gap-2 rounded-full px-9 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-primary-foreground transition-transform duration-300 hover:scale-[1.03]"
           >
             Book a Consultation
           </button>
           <button
             onClick={() => scrollTo('#services')}
-            className="rounded-full border border-gold/40 px-9 py-4 text-sm font-light uppercase tracking-[0.16em] text-foreground transition-all duration-300 hover:border-gold hover:bg-gold/5"
+            className="cursor-pointer rounded-full border border-gold/40 px-9 py-4 text-sm font-light uppercase tracking-[0.16em] text-foreground transition-all duration-300 hover:border-gold hover:bg-gold/5"
           >
             View Services
           </button>
@@ -101,7 +101,7 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.4 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gold/60 transition-colors hover:text-gold"
+        className="absolute bottom-8 cursor-pointer left-1/2 -translate-x-1/2 text-gold/60 transition-colors hover:text-gold"
       >
         <motion.span
           animate={{ y: [0, 8, 0] }}

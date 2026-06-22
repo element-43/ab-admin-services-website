@@ -38,14 +38,14 @@ export function Navbar() {
       className={cn(
         'fixed inset-x-0 top-0 z-50 transition-all duration-500',
         scrolled
-          ? 'bg-black/60 backdrop-blur-md  border-b border-gold/15 py-3'
+          ? 'backdrop-blur-lg border-b border-gold/15 py-3'
           : 'bg-transparent py-5',
       )}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
         <button
           onClick={() => go('#hero')}
-          className="flex items-center gap-3"
+          className="cursor-pointer flex items-center gap-3"
           aria-label="AB Admin Services home"
         >
           <Image
@@ -62,7 +62,7 @@ export function Navbar() {
             <li key={l.href}>
               <button
                 onClick={() => go(l.href)}
-                className="group relative text-sm font-light uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-foreground"
+                className="cursor-pointer group relative text-sm font-light uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-foreground"
               >
                 {l.label}
                 <span className="absolute -bottom-1.5 left-0 h-px w-0 bg-gold transition-all duration-300 group-hover:w-full" />
@@ -73,13 +73,13 @@ export function Navbar() {
 
         <button
           onClick={() => go('#contact')}
-          className="hidden rounded-full border border-gold/40 px-6 py-2.5 text-xs font-medium uppercase tracking-[0.18em] text-gold transition-all duration-300 hover:bg-gold hover:text-primary-foreground md:block"
+          className="cursor-pointer hidden rounded-full border border-gold/40 px-6 py-2.5 text-xs font-medium uppercase tracking-[0.18em] text-gold transition-all duration-300 hover:bg-gold hover:text-primary-foreground md:block"
         >
           Book a Consultation
         </button>
 
         <button
-          className="text-gold md:hidden"
+          className="cursor-pointer text-gold md:hidden"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
         >
@@ -94,14 +94,14 @@ export function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="glass overflow-hidden border-t border-gold/15 md:hidden"
+            className="backdrop-blur-md overflow-hidden md:hidden"
           >
             <ul className="flex flex-col gap-1 px-6 py-6">
               {links.map((l) => (
                 <li key={l.href}>
                   <button
                     onClick={() => go(l.href)}
-                    className="block w-full py-3 text-left text-sm uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-gold"
+                    className="block cursor-pointer w-full py-3 text-left text-sm uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-gold"
                   >
                     {l.label}
                   </button>
@@ -110,7 +110,7 @@ export function Navbar() {
               <li className="pt-2">
                 <button
                   onClick={() => go('#contact')}
-                  className="w-full rounded-full bg-gold-gradient py-3 text-xs font-semibold uppercase tracking-[0.18em] text-primary-foreground"
+                  className="cursor-pointer w-full rounded-full bg-gold-gradient py-3 text-xs font-semibold uppercase tracking-[0.18em] text-primary-foreground"
                 >
                   Book a Consultation
                 </button>
