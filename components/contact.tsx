@@ -9,7 +9,7 @@ export function Contact() {
     <section id="contact" className="relative px-6 py-28 lg:py-36">
       <div className="section-divider mx-auto mb-24 h-px max-w-4xl" />
 
-      <div className="mx-auto grid max-w-6xl gap-14 lg:grid-cols-2">
+      <div className="mx-auto grid max-w-6xl gap-14 lg:grid-cols-1">
         {/* Left */}
         <div className="flex flex-col gap-8 items-center text-center">
           <Reveal>
