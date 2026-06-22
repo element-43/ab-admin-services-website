@@ -11,7 +11,7 @@ export function Contact() {
 
       <div className="mx-auto grid max-w-6xl gap-14 lg:grid-cols-2">
         {/* Left */}
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 items-center text-center">
           <Reveal>
             <span className="flex items-center gap-3 text-xs font-light uppercase tracking-[0.32em] text-gold">
               <span className="h-px w-8 bg-gold/50" />
