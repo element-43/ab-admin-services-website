@@ -27,7 +27,7 @@ export function LoadingScreen() {
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           >
             <Image
-              src="/images/ab-logo.png"
+              src="/images/logo.png"
               alt="AB Admin Services"
               width={150}
               height={150}

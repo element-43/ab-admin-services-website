@@ -23,15 +23,12 @@ export function Footer() {
           <div className="flex flex-col gap-5">
             <div className="flex items-center gap-3">
               <Image
-                src="/images/ab-logo.png"
+                src="/images/banner_logo-white.png"
                 alt="AB Admin Services logo"
-                width={52}
+                width={133}
                 height={52}
-                className="h-12 w-12 object-contain"
+                className="object-contain"
               />
-              <span className="font-heading text-xl font-medium tracking-wide text-foreground">
-                AB <span className="text-gold">Admin</span> Services
-              </span>
             </div>
             <p className="max-w-sm text-sm font-light leading-relaxed text-muted-foreground">
               Professional Administration, Business Support, Websites and App

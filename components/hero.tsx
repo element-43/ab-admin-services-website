@@ -36,7 +36,7 @@ export function Hero() {
           className="mb-8"
         >
           <Image
-            src="/images/ab-logo.png"
+            src="/images/logo.png"
             alt="AB Admin Services logo"
             width={220}
             height={220}

@@ -38,7 +38,7 @@ export function Navbar() {
       className={cn(
         'fixed inset-x-0 top-0 z-50 transition-all duration-500',
         scrolled
-          ? 'glass border-b border-gold/15 py-3'
+          ? 'bg-black/60 backdrop-blur-md  border-b border-gold/15 py-3'
           : 'bg-transparent py-5',
       )}
     >
@@ -49,15 +49,12 @@ export function Navbar() {
           aria-label="AB Admin Services home"
         >
           <Image
-            src="/images/ab-logo.png"
+            src="/images/banner_logo-white.png"
             alt="AB Admin Services logo"
-            width={48}
+            width={123}
             height={48}
-            className="h-11 w-11 object-contain"
+            className="object-contain"
           />
-          <span className="hidden font-heading text-xl font-medium tracking-wide text-foreground sm:block">
-            AB <span className="text-gold">Admin</span> Services
-          </span>
         </button>
 
         <ul className="hidden items-center gap-9 md:flex">
