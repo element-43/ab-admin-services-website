@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   title: 'AB Admin Services | Luxury Business Support, Administration & Development',
   description:
     'AB Admin Services provides premium administration, virtual assistance, property management, website and app development for trades, small businesses and growing companies.',
+  icons: {
+    icon: '/favicon.png',
+  },
   keywords: [
     'business administration',
     'virtual assistant',
@@ -40,7 +43,6 @@ export const metadata: Metadata = {
       'Professional business support that gives you back your time. Administration, virtual assistance, property management, websites and app development.',
     type: 'website',
   },
-  generator: 'v0.app',
 }
 
 export const viewport = {
