@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { Mail } from 'lucide-react'
 import { FacebookIcon, InstagramIcon } from '@/components/social-icons'
+import { CONTACT_EMAIL } from '@/lib/constants';
 
 const navLinks = [
   { label: 'About', href: '#about' },
@@ -59,7 +60,7 @@ export function Footer() {
               Connect
             </h4>
             <a
-              href="mailto:office@abadmin.services"
+              href={`mailto:${CONTACT_EMAIL}`}
               className="cursor-pointer flex items-center gap-3 text-sm font-light text-muted-foreground transition-colors hover:text-gold"
             >
               <Mail className="h-4 w-4 text-gold" />

@@ -3,6 +3,7 @@
 import { Mail } from 'lucide-react'
 import { FacebookIcon, InstagramIcon } from '@/components/social-icons'
 import { Reveal } from '@/components/reveal'
+import { CONTACT_EMAIL } from '@/lib/constants'
 
 export function Contact() {
   return (
@@ -33,7 +34,7 @@ export function Contact() {
 
           <Reveal delay={0.15}>
             <a
-              href="mailto:office@abadmin.services"
+              href={`mailto:${CONTACT_EMAIL}`}
               className="cursor-pointer glass group flex w-fit items-center gap-4 rounded-xl border border-gold/20 px-6 py-4 transition-all duration-300 hover:border-gold/50"
             >
               <span className="flex h-11 w-11 items-center justify-center rounded-full border border-gold/30 text-gold transition-colors group-hover:bg-gold group-hover:text-primary-foreground">
