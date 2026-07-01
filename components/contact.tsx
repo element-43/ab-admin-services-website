@@ -45,7 +45,7 @@ export function Contact() {
                   Email Us
                 </span>
                 <span className="text-base font-light text-foreground">
-                  office@abadmin.services
+                  {CONTACT_EMAIL}
                 </span>
               </span>
             </a>

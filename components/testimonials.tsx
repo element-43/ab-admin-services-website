@@ -2,30 +2,28 @@
 
 import { motion } from 'framer-motion'
 import { Quote, Star } from 'lucide-react'
-import { SectionHeading } from '@/components/section-heading'
+import { useMemo,  } from 'react'
 
-const testimonials = [
-  {
-    quote:
-      'AB Admin Services transformed how we run our trade business. Invoicing, scheduling and the chaos of paperwork — all handled flawlessly. We finally have our evenings back.',
-    name: 'James Holloway',
-    role: 'Director, Holloway Electrical',
-  },
-  {
-    quote:
-      'From bookkeeping to a stunning new website, the level of professionalism is second to none. It genuinely feels like having a dedicated office team without the overhead.',
-    name: 'Sophie Bennett',
-    role: 'Founder, Bennett Property Lettings',
-  },
-  {
-    quote:
-      'They built our bespoke booking app and continue to support it brilliantly. Reliable, discreet and always one step ahead. An essential partner for our growth.',
-    name: 'Daniel Pryce',
-    role: 'Owner, Pryce Mechanical',
-  },
-]
+import { SectionHeading } from '@/components/section-heading'
+import { TestimonialItem } from '@/lib/types';
 
 export function Testimonials() {
+  const testimonials = useMemo<TestimonialItem[]>(() => ([
+    {
+      company: 'Potato Pictures',
+      key: 'q9syq0us',
+      quote:
+        'AB Admin Services have been an absolute game-changer for us at Potato Pictures. From invoicing and scheduling to taming the everyday chaos of paperwork, everything has been handled with total efficiency, care and professionalism. They’ve made our working lives easier, calmer and far more organised — and, best of all, given us our evenings back.',
+    },
+    {
+      company: 'Serenity Skincare',
+      key: '06k9gh58',
+      name: 'Natasha',
+      quote:
+        'I was introduced to AB Admin Services through a mutual friend, and I’m honestly so glad I was. As a small business owner, I’d been thinking for a while about taking my natural skincare range to the next level and finally creating a website. I’d be lying if I said I wasn’t nervous — it felt like such a big step and, at times, really overwhelming. But from the very beginning, AB Admin Services made the whole process feel simple, calm and completely manageable. They held my hand from start to finish, explained everything clearly, and made something that felt quite daunting feel exciting instead. It has been an absolute pleasure to work with AB Admin Services, and I’m genuinely so grateful for all the support, patience and guidance along the way. A massive thank you from me — I would absolutely recommend AB Admin Services to any small business owner who is ready to take that next step. Thank you again for making what could have been a stressful experience such an enjoyable one.',
+    },
+  ]), [])
+
   return (
     <section className="relative px-6 py-28 lg:py-36">
       <div className="mx-auto max-w-7xl">
@@ -35,10 +33,10 @@ export function Testimonials() {
           className="mb-16"
         />
 
-        <div className="grid gap-6 lg:grid-cols-3">
-          {testimonials.map((t, i) => (
+        <div className={`grid gap-6 lg:grid-cols-${testimonials.length}`}>
+          {testimonials.map(({ company, key, name, quote }, i) => (
             <motion.figure
-              key={t.name}
+              key={key}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
@@ -53,12 +51,13 @@ export function Testimonials() {
                 ))}
               </div>
               <blockquote className="text-pretty text-base font-light italic leading-relaxed text-foreground/90">
-                &ldquo;{t.quote}&rdquo;
+                &ldquo;{quote}&rdquo;
               </blockquote>
               <figcaption className="mt-auto border-t border-gold/15 pt-5">
-                <p className="font-heading text-lg font-medium text-gold">{t.name}</p>
+                {name && (<p className="font-heading text-lg font-medium text-gold">{name}</p>)}
+
                 <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
-                  {t.role}
+                  {company}
                 </p>
               </figcaption>
             </motion.figure>
