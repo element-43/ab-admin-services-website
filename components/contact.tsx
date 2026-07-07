@@ -3,7 +3,7 @@
 import { Mail } from 'lucide-react'
 import { FacebookIcon, InstagramIcon } from '@/components/social-icons'
 import { Reveal } from '@/components/reveal'
-import { CONTACT_EMAIL } from '@/lib/constants'
+import { CONTACT_EMAIL, FACEBOOK_URL, INSTAGRAM_URL } from '@/lib/constants'
 
 export function Contact() {
   return (
@@ -54,7 +54,7 @@ export function Contact() {
           <Reveal delay={0.2}>
             <div className="flex items-center gap-4">
               <a
-                href="https://www.facebook.com/profile.php?id=61587848471183"
+                href={FACEBOOK_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="AB Admin Services on Facebook"
@@ -63,7 +63,7 @@ export function Contact() {
                 <FacebookIcon className="h-5 w-5" />
               </a>
               <a
-                href="https://www.instagram.com/abadmin2026/"
+                href={INSTAGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="AB Admin Services on Instagram"
